@@ -7,7 +7,7 @@ import Chat from "./Components/Chat";
 import NewMessage from "./Components/NewMessage";
 
 function App() {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState({loggedIn: false, username: ''});
   return (
     <UserContext.Provider value={{ user, setUser }}>
       <div className="App">

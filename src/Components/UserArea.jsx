@@ -3,7 +3,7 @@ import { UserContext } from "../contexts/UserContext";
 import { useContext } from "react";
 
 const UserArea = () => {
-  return <div></div>;
+  return <div className="UserArea"></div>;
 };
 
 export default UserArea;

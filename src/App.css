@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: 10% 80% 10%;
+  grid-template-areas:
+    "Nav Nav"
+    "Users Chat"
+    "Users NewMessage";
+}
+
+.Nav {
+  background-color: aqua;
+  grid-area: Nav;
+}
+
+.Users {
+    background-color: lightgreen;
+    grid-area: Users;
+}
+
+.Chat {
+    background-color: salmon;
+    grid-area: Chat;
+    overflow-y: scroll;
+}
+
+.NewMessage {
+  background-color: slateblue;
+  grid-area: NewMessage;
+}
